@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto_conventer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   
+
+
+    <div align="center">
+       
+
+
+        <div class="second_div">
+            <h1>Bitcoin_Conventer</h3>
+            <h3>Check the current value of Bitcoin</h1>
+            <input id="input" type="number" placeholder="Enter the number of Bitcion"> 
+            <button onclick="convert()">convert</button>
+        </div>
+   
+
+    <div id="show">
+
+    </div>
+
+
+    </div>
+
+    <video  autoplay muted loop id="myVideo">
+        <source src="https://player.vimeo.com/external/564155892.sd.mp4?s=cabd662d1bf561342f03ddd47c498c29ba43b29f&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+     
+    </video>
+
+
+    <div class="proto">
+      
+        <i>Idea by Shalom(JUPEB)</i>
+            <i>Developer - HONOURABLE</i> 
+    </div>
+
+    <audio  autoplay>
+       
+        <source src="https://divineflaver.com/wp-content/uploads/2021/12/Brooklyn_Tabernacle_Choir_-_All_Of_My_Help_CeeNaija.com_.mp3" type="audio/mpeg">
+      
+      </audio>
+
+   
+
+    <script>
+         
+        const convert = () => {
+           
+            let result = '';
+            let endpoint = 'https://api.coindesk.com/v1/bpi/currentprice.json'
+
+            fetch(endpoint).then((response) => {
+                response.json().then((data) => {
+                    console.log(data.bpi.USD.rate_float);
+                    result += `  <small>$${(data.bpi.USD.rate_float * input.value).toFixed(2)}</small> <small>£${(data.bpi.GBP.rate_float * input.value).toFixed(2)}</small> <small>€${(data.bpi.EUR.rate_float  * input.value).toFixed(2)}</small>`
+                    console.log(result);
+                    document.getElementById('show').innerHTML = result;
+                })
+
+
+            })
+        }
+    </script>
+</body>
+</html>

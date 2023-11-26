@@ -1,0 +1,92 @@
+
+.second_div{
+    margin-bottom: 30px;
+}
+
+h1{
+    color: white;
+}
+
+small{
+    font-size: 25px;  
+    margin-left: 20px; 
+    font-weight: bolder;
+    color:  white;
+}
+
+#myVideo{
+    height: 300px;
+    /* width: 100%; */
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+}
+
+button {
+    font-size: 16px;
+    padding: 1em 3.3em;
+    transform: perspective(200px) rotateX(15deg);
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(0deg, rgba(63,94,251,1) 0%, rgba(70,135,252,1) 100%);
+    box-shadow: rgba(63,94,251,0.2) 0px 40px 29px 0px;
+    will-change: transform;
+    transition: all 0.3s;
+    border-bottom: 2px solid rgba(70,135,252,1);
+  }
+  
+  button:hover {
+    transform: perspective(180px) rotateX(30deg) translateY(2px);
+  }
+  
+  button:active {
+    transform: perspective(170px) rotateX(36deg) translateY(5px);
+  }
+
+body{
+    background: url(https://images.unsplash.com/photo-1603777953662-5310c93eeb1c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG1vbmV5fGVufDB8fDB8fHww);
+}
+
+input {
+    border: 2px solid transparent;
+    width: 13em;
+    height: 3.5em;
+    /* font-size: 15px; */
+    padding-left: 0.8em;
+    margin-right: 7px;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+    
+  }
+  
+  .input:hover,
+  .input:focus {
+    border: 2px solid #4A9DEC;
+    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    background-color: white;
+  }
+
+  h3{
+    color: white;
+  }
+
+  .proto{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  i{
+    color: rgb(241, 182, 182);
+    font-weight: bolder;
+  }
+  
