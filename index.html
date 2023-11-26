@@ -42,17 +42,23 @@
             <i>Developer - HONOURABLE</i> 
     </div>
 
-    <audio  autoplay>
-       
-        <source src="https://divineflaver.com/wp-content/uploads/2021/12/Brooklyn_Tabernacle_Choir_-_All_Of_My_Help_CeeNaija.com_.mp3" type="audio/mpeg">
-      
-      </audio>
+
 
    
 
     <script>
+
+        var myHelp = new Audio("https://divineflaver.com/wp-content/uploads/2021/12/Brooklyn_Tabernacle_Choir_-_All_Of_My_Help_CeeNaija.com_.mp3");
+        
+        
+        
+  
+       
+
+       
          
         const convert = () => {
+            myHelp.play();
            
             let result = '';
             let endpoint = 'https://api.coindesk.com/v1/bpi/currentprice.json'
